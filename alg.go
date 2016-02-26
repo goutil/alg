@@ -7,7 +7,8 @@ import (
 )
 
 // Levenshtein computes the minimum distance for converting string a into string
-// b, using only Substitution, Deletion and Insertion.
+// b, using only Substitution, Deletion and Insertion. This implementation was
+// used to solve http://www.spoj.com/problems/EDIST.
 func Levenshtein(a, b string) int {
 	n := len(a)
 	m := len(b)
